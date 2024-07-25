@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="image_detail_dialog_image_view">380dp</dimen>
+    <dimen name="item_ib_eliminar_image_view">40dp</dimen>
+    <dimen name="layout_small_normal_extra">14dp</dimen>
+
+    <!-- Common dimensions -->
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="margin_medium">24dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+
+    <!-- pop up string -->
+    <dimen name="layout_width_image_top_line">60dp</dimen>
+
+    <!-- Corner radius -->
+    <dimen name="card_corner_radius_top">40dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_extra_normal">10dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding">5dp</dimen>
+
+    <!-- Text dimensions -->
+    <dimen name="text_size_h2">18sp</dimen>
+    <dimen name="text_size_h3">16sp</dimen>
+    <dimen name="text_size_h4">14sp</dimen>
+    <dimen name="text_size">19sp</dimen>
+
+</resources>

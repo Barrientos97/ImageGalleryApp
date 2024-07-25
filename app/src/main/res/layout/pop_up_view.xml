@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pop_up_design">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_top_line"
+            android:layout_width="@dimen/layout_width_image_top_line"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_remove"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/ico_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:src="@drawable/ic_alerg_error"
+            app:layout_constraintEnd_toEndOf="@+id/image_top_line"
+            app:layout_constraintStart_toStartOf="@+id/image_top_line"
+            app:layout_constraintTop_toBottomOf="@+id/image_top_line" />
+
+        <TextView
+            android:id="@+id/title_txt"
+            style="@style/PrimaryTextHintStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:gravity="center_horizontal|top"
+            android:text="@string/delete_image"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBottom_toTopOf="@+id/message_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ico_image_view" />
+
+        <TextView
+            android:id="@+id/message_txt"
+            style="@style/PrimaryTextHintStyle"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/hint_text_color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center_horizontal|top"
+            app:layout_constraintBottom_toTopOf="@+id/confirm_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_txt"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/confirm_btn"
+            style="@style/PrimaryButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:text="@string/confirm"
+            app:layout_constraintBottom_toTopOf="@+id/close_or_accept_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/close_or_accept_btn"
+            style="@style/SecondaryButtonStyle_Acept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:text="@string/cancel"
+            android:textSize="@dimen/text_size_h4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

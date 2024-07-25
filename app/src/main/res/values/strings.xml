@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ImageGalleryApp</string>
+    <string name="titulo">Titulo</string>
+    <string name="subtitulo">Subtitulo\n</string>
+    <string name="date">Fecha</string>
+    <string name="delete_image">Eliminar imagen</string>
+    <string name="cancel">Cancelar</string>
+    <string name="confirm">Confirmar</string>
+    <string name="text_message_delete">¿Esta seguro que desea eliminar esta imagen?</string>
+</resources>
